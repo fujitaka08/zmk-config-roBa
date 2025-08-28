@@ -52,6 +52,13 @@
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
         };
+
+        space4: space4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE>;
+            label = "SPACE4";
+        };
     };
 
     behaviors {
@@ -83,7 +90,7 @@
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)   &kp LS(NUMBER_0)
 &kp LS(LC(C))     &trans            &kp SQT           &kp DOUBLE_QUOTES  &trans            &trans      &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS
-&kp GRAVE         &kp LS(GRAVE)     &kp BACKSLASH     &kp LS(BACKSLASH)  &trans            &trans      &trans  &kp EQUAL         &kp LS(EQUAL)     &none             &none              &kp LS(F11)
+&kp GRAVE         &kp LS(GRAVE)     &kp BACKSLASH     &kp LS(BACKSLASH)  &space4           &trans      &trans  &kp EQUAL         &kp LS(EQUAL)     &none             &none              &kp LS(F11)
 &trans            &trans            &trans            &trans             &trans            &trans      &trans  &trans                                                                   &trans
             >;
         };
