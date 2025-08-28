@@ -83,7 +83,7 @@
 &mo 6               &kp LG(E)  &kp LG(L)  &mt LEFT_ALT ESCAPE  &lt 1 LANGUAGE_2  &lt 1 SPACE      &lt 2 ENTER    &lt 2 LANGUAGE_1                                  &kp ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp A B>;
         };
 
         FUNCTION {
