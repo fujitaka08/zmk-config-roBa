@@ -83,14 +83,14 @@
 &mo 6               &kp LG(E)  &kp LG(L)  &mt LEFT_ALT ESCAPE  &lt 1 LANGUAGE_2  &lt 1 SPACE      &lt 2 ENTER    &lt 2 LANGUAGE_1                                  &kp ESCAPE
             >;
 
-            sensor-bindings = <&inc_dec_kp A B>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_DOWN C_VOLUME_UP>;
         };
 
         FUNCTION {
             bindings = <
 &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)   &kp LS(NUMBER_5)                      &kp LS(NUMBER_6)  &kp LS(NUMBER_7)  &kp LS(NUMBER_8)  &kp LS(NUMBER_9)   &kp LS(NUMBER_0)
 &kp LS(LC(C))     &trans            &kp SQT           &kp DOUBLE_QUOTES  &trans            &trans      &trans  &kp LEFT_BRACE    &kp RIGHT_BRACE   &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp MINUS
-&kp GRAVE         &kp LS(GRAVE)     &kp BACKSLASH     &kp LS(BACKSLASH)  &space4           &trans      &trans  &kp EQUAL         &kp LS(EQUAL)     &none             &none              &kp LS(F11)
+&kp GRAVE         &kp LS(GRAVE)     &kp BACKSLASH     &kp LS(BACKSLASH)  &space4           &trans      &trans  &kp EQUAL         &kp LS(EQUAL)     &none             &none              &kp LS(MINUS)
 &trans            &trans            &trans            &trans             &trans            &trans      &trans  &trans                                                                   &trans
             >;
         };
@@ -117,9 +117,9 @@
 
         MOUSE {
             bindings = <
-&trans            &trans    &mkp MB3  &trans    &trans                      &trans  &trans    &mkp MB3  &trans    &trans
+&trans            &trans    &mkp MB3  &trans    &trans                      &trans  &to 0     &mkp MB3  &trans    &trans
 &kp LEFT_CONTROL  &mkp MB1  &mo 5     &mkp MB2  &trans  &trans      &trans  &trans  &mkp MB1  &mo 5     &mkp MB2  &trans
-&kp LEFT_SHIFT    &kp X     &kp C     &kp V     &trans  &trans      &trans  &trans  &trans    &trans    &trans    &trans
+&kp LEFT_SHIFT    &kp X     &kp C     &kp V     &trans  &trans      &to 0   &trans  &trans    &trans    &trans    &trans
 &trans            &trans    &trans    &trans    &trans  &trans      &trans  &trans                                &trans
             >;
         };
